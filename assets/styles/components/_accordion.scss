@@ -1,0 +1,141 @@
+.panel-group{
+	.panel-heading{
+		padding: 20px 40px 10px 40px;
+		background-color:$brand-primary;
+		background-image:url(../images/accordion.gif);
+  		margin-top: 40px;
+ 		margin-bottom: 10px;
+ 		position:relative;
+ 		line-height: 25px;
+
+ 		@media (min-width: $small-screen) {
+ 			margin-left: -40px;
+  			margin-right: -40px;
+ 		}
+		.panel-title, p{
+			color:white;
+			font-size: 17px;
+			font-weight: 700;
+			font-family: 'Montserrat', sans-serif;
+			line-height: 25px;
+		}
+		.panel-title{
+
+			a{
+			  width: 100%;
+	          height: 100%;
+	          display: block;
+				&.collapsed{
+					&:after{
+						content: '+';
+		 				line-height: 45px;
+					}
+				}
+				&:after{
+		 			content: '-';
+					line-height: 40px;
+		 			width:44px;
+		 			height:44px;
+		 			display: block;
+		 			background-color:white;
+		 			border-radius: 22px;
+		 			position: absolute;
+		 			right:40px;
+		 			top:22px;
+		 			font-size: 40px;
+				  	text-align: center;
+				  	font-family: Arial;
+				  	color: #000;
+				  	font-weight: 300;
+
+				  		@media (max-width: $medium-screen) {
+				  			display: none;
+				  		}
+		 		}
+			}
+		}
+	}
+	.panel-body{
+		p, li{
+			color: #525252;
+			font-weight: 300;
+			font-family: 'Montserrat', sans-serif;
+			line-height: 20px;	
+		}
+	
+	}
+	.panel-additional-wrapper{
+		background-color:#181818;
+		margin-left: 0;
+		margin-right: 0;
+		margin-top:15px;
+		margin-bottom:60px;
+		.panel-additional{
+			margin-left: 0;
+			margin-right: 0;
+		}
+
+	}
+	.panel-additional-image{
+		width:50%;
+		float:left;
+	}
+	.panel-additional{
+		background-color:#181818;
+		margin-left: -15px;
+		margin-right: -15px;
+		margin-top:15px;
+		margin-bottom:0;
+		padding: 20px 40px;
+		&:empty{
+			display: none; 
+		}
+
+		h1, h2, h3{
+			color: $brand-primary;
+			font-weight: 300;
+			font-family: 'Montserrat', sans-serif;
+			line-height: 20px;
+			font-size: 17px;
+			margin: 5px 0 20px 0;	
+		}
+		p, li{
+			color: #fff;
+			font-weight: 300;
+			font-family: 'Montserrat', sans-serif;
+			line-height: 20px;	
+		}
+
+		ul{
+			padding-left: 25px
+		}
+
+		li{
+			margin-bottom: 20px;
+		}
+	}
+}
+
+
+.accordion-container{
+	margin-bottom:55px;
+	h2{
+		color: $brand-primary;
+	}
+	h3{
+		color: $brand-secondary;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 700;
+		font-size: 17px;
+	}
+	p{
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 300;
+	}
+	.panel-group{
+		.panel-body{
+			border-top:transparent!important;
+		}
+	}
+}
+

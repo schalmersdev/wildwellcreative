@@ -1,0 +1,54 @@
+h1{
+
+}
+
+h2{
+	font-size:22px;
+	font-family:$open-sans-bold;
+	font-weight:700;
+	color: $brand-secondary;
+	text-transform:uppercase;
+	margin-bottom:35px;
+	letter-spacing: 1px;
+
+}
+h3{
+	font-size:22px;
+	font-family:$open-sans-bold;
+	font-weight:700;
+	color: $brand-primary;
+	margin-bottom:35px;
+	letter-spacing: 1px;
+	
+}
+
+blockquote{
+	font-size:17px;
+	font-family:$open-sans-bold;
+	font-weight:700;
+	color: $brand-secondary;
+	margin-bottom:35px;
+	margin-top:35px;
+	text-align:center;
+	border-left: 0; 
+	letter-spacing: 1px;
+	
+}
+
+.img-offset{
+	margin-top:30px;
+}
+
+.wysiwyg{
+	p{
+		font-size: 17px;
+		color:$brand-primary;
+		font-family: 'Montserrat', sans-serif;
+		line-height: 27px;
+		font-weight: 700;
+		
+		
+	}
+}
+
+

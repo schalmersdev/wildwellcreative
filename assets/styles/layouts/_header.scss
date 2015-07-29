@@ -1,0 +1,131 @@
+.custom-bg{
+	background-position: center top;
+	background-size: cover;
+	width:100%;
+	text-align:center;
+	position:relative;
+	float:left;
+
+
+
+	h2{
+		font-size: 22px;
+		color: white;
+		text-shadow: -2px 2px #dcbb6a;
+		@media (min-width: $small-screen) {
+			padding:30px 0 10px 0;
+		}
+	}
+
+	.img-logo{
+		display: block;
+  		max-width: 100%;
+  		height: auto;
+  		margin:0 auto;
+  		z-index: 10;
+  		position: relative;
+  		margin-top: 50px;
+	}
+
+	&:before, &:after{
+		display: block;
+		position:absolute;
+		content: '';
+		background-image:url(../images/structure.png);
+		width:300px;
+		height:300px;
+		opacity: 0.2;
+		@media (min-width: $small-screen) {
+			opacity: 1;
+		}
+	}
+
+	&:before{
+		bottom:0;
+		left:0;
+		background-position:top right;
+	}
+
+	&:after{
+		top:0;
+		right:0;
+		background-position:bottom left;
+	}
+
+}
+
+.produced-by{
+	background:#252d2c;
+	width:240px;
+	line-height:40px;
+	margin:0 auto;
+	color:white;
+	font-family:$open-sans-bold;
+	font-size:20px;
+	text-align:center;
+	text-transform:uppercase;
+	font-weight:700;
+	position: relative;
+  	top: 20px;
+  	z-index: 99;
+  	
+	&:before, &:after{
+	  	content: '';
+	    display: block;
+		width: 0;
+		height: 0;
+		position: absolute;
+		top: 0;
+	}
+
+  	&:before {
+		border-top: 20px solid transparent;
+		border-right: 40px solid #252d2c;
+		border-bottom: 20px solid transparent;
+		left: -40px;
+	}
+
+	&:after{
+		border-top: 20px solid transparent;
+		border-left: 40px solid #252d2c;
+		border-bottom: 20px solid transparent;
+		right: -40px;
+	}
+}
+
+.slicknav_menu{
+	display: block;
+	@media (min-width: $medium-screen) {
+		display: none;
+	}
+}
+
+.menu-course-container{
+	 display: none;
+	 @media (min-width: $medium-screen) {
+		display: block;
+	 }
+	 clear: both;
+  	 position: relative;
+	 background: rgba(255, 255, 255, 0.4);
+	.nav{
+		max-width:960px;
+		margin:0 auto;
+		li{
+			width:137px;
+			float:left;
+			a{
+				text-transform: uppercase;
+				font-family:$open-sans-bold;
+				color:white;
+				font-weight: 700;
+				padding: 20px 15px;
+				text-align: center;
+				&:hover{
+					background-color:$brand-primary;
+				}
+			}
+		}
+	}
+}
+
